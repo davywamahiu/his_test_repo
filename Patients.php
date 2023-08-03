@@ -37,7 +37,7 @@ include_once dirname(__FILE__).'/includes/Connection.php';
 			}
 			//if no errors create patient
 			if (count($errors)<=0) {
-				$stmt = "INSERT INTO patients(name, date_of_birth, id_number, address, county, sub_county, telephone, email, gender, marital_status, next_of_kin_name, next_of_kin_date_of_birth, next_of_kin_id_number, next_of_kin_gender, next_of_kin_relationship, next_of_kin_telephone) VALUES ('$name','$dob','$idno','$address','$county','$sub','$phone','$email','$sex','$marital','$kname','$kdob','','$kidno','$ksex','$relative','$kphone')";
+				$stmt = "INSERT INTO `patients` VALUES ('$name','$dob','$idno','$address','$county','$sub','$phone','$email','$sex','$marital','$kname','$kdob','','$kidno','$ksex','$relative','$kphone')";
 				$query = mysqli_query($con, $stmt);
 
 				if($query){
@@ -45,7 +45,7 @@ include_once dirname(__FILE__).'/includes/Connection.php';
 						<div class="alert" id="success">
 							<p><strong>Success! </strong> <?php echo $reg; $to = $email;
 				$subject = "You have been registered";
-				$message = "Hello!" + $name;
+				$message = "123454!";
 				mail($to, $subject, $message);
 				?>Patient Created</p>
 						</div>
