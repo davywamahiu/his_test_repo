@@ -1,0 +1,48 @@
+table{
+	margin: 0px auto;
+	border-collapse: collapse;
+	border:1px solid #ffff00;
+	border-spacing: 5px;
+	border-radius: 10px;
+	width: 100%;
+	line-height: 5px;
+}
+
+th, td{
+	border-bottom: 1px solid #ff6600;
+}
+tr,td{
+	padding: 10px;
+	padding-left: 5px;
+	text-align: center;
+	color: #000000;
+}
+
+tr:nth-child(even){
+		background-color:  #acac86;
+}
+tr:nth-child(odd){
+	background-color: #ffffff;
+}
+th{
+	background-color: #cc3300;
+	font-family: tahoma;
+	font-size: 15px;
+	margin:10px;
+	padding: 10px;
+	color:#fff;
+}
+caption{
+	height: 40px;
+	padding-top: 20px;
+	font-size: 34px;
+	background:#cc3300;
+	font-size: 20px;
+	color: #fff;
+	border-radius:10px 10px 0px 0px;
+}
+
+.marks-claim-table{
+	width: 100%;
+	line-height: 5px;
+}
